@@ -1,3 +1,2 @@
-maple_project
-=============
-这是一个简易的登陆检测，包含验证码刷新、ajax、jq，后续还有一些功能尚待开放
+#thinkphp-verify-login
+基于 ThinkPHP 3.2 的 Login 实例，使用 ThinkPHP 的验证码库
