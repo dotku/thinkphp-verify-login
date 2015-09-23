@@ -1,11 +1,11 @@
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html lang="en">
 	<head>
 		<title>后台登陆</title>
 		
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/login.css" media="all">
-		<script type="text/javascript" src="__PUBLIC__/jquery-1.7.2.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/Admin/js/login.js"></script>
+		<link rel="stylesheet" type="text/css" href="/lab/thinkphp/thinkphp-verify-login/Public/Admin/css/login.css" media="all">
+		<script type="text/javascript" src="/lab/thinkphp/thinkphp-verify-login/Public/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="/lab/thinkphp/thinkphp-verify-login/Public/Admin/js/login.js"></script>
 	</head>
 	<body id="login-page">
 		<div id="main-content">
@@ -13,7 +13,7 @@
 			
 			<div class="login-body">
 				<div class="login-main">
-					<form action="{:U('login')}" method="post" class="login-form">
+					<form action="<?php echo U('login');?>" method="post" class="login-form">
 						<h3 class="welcome">后台管理平台</h3>
 						<div id="itemBox" class="item-box">
 							<div class="item">
@@ -33,7 +33,7 @@
 							</div>
 							<span class="placeholder_copy placeholder_check"></span>
 							<div>
-								<img class="verifyimg reloadverify" alt="点击切换" src="{:U('Public/verify')}" />
+								<img class="verifyimg reloadverify" alt="点击切换" src="<?php echo U('Public/verify');?>" />
 							</div>
 						</div>
 						<div class="login-btn-panel">

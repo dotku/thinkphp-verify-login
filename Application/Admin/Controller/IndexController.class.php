@@ -3,7 +3,10 @@
 	
 	use Think\Contrloller;
 	
-	class PublicController extends \Think\Controller{
+	class IndexController extends \Think\Controller{
+		function index(){
+			$this->redirect("index/login");
+		}
 		public function login($username = null, $password = null, $verify = null){
 			if(IS_POST){
 				/*检测验证码*/

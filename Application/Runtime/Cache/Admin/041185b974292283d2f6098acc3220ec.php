@@ -3,9 +3,9 @@
 	<head>
 		<title>后台登陆</title>
 		
-		<link rel="stylesheet" type="text/css" href="/exam/Maple/Public/Admin/css/login.css" media="all">
-		<script type="text/javascript" src="/exam/Maple/Public/jquery-1.7.2.js"></script>
-		<script type="text/javascript" src="/exam/Maple/Public/Admin/js/login.js"></script>
+		<link rel="stylesheet" type="text/css" href="/lab/thinkphp/thinkphp-verify-login/Public/Admin/css/login.css" media="all">
+		<script type="text/javascript" src="/lab/thinkphp/thinkphp-verify-login/Public/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="/lab/thinkphp/thinkphp-verify-login/Public/Admin/js/login.js"></script>
 	</head>
 	<body id="login-page">
 		<div id="main-content">
@@ -33,7 +33,7 @@
 							</div>
 							<span class="placeholder_copy placeholder_check"></span>
 							<div>
-								<img class="verifyimg reloadverify" alt="点击切换" src="<?php echo U('Public/verify');?>" />
+								<img class="verifyimg reloadverify" alt="点击切换" src="<?php echo U('Index/verify');?>" />
 							</div>
 						</div>
 						<div class="login-btn-panel">
