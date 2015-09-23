@@ -32,12 +32,15 @@
 				});
 				
 				$("form").submit(function(){
+					window.console ? console.log('submit') : '';
+					window.console ? console.log(self.serialize()) : '';
 					var self=$(this);
 					$.post(self.attr("action"),self.serialize(),success,"json");
 					return false;
 					
 					function success(data){		//回调函数
 						if(data.status){		//验证成功后进行跳转
+							window.console ? console.log(data) : '';
 							window.location.href = data.url;
 						}else{
 							//验证失败后寻找class为check-tips的标签，然后打印出错误信息

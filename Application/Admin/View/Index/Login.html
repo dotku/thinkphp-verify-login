@@ -14,16 +14,17 @@
 			<div class="login-body">
 				<div class="login-main">
 					<form action="{:U('login')}" method="post" class="login-form">
+                        <input type="hidden" name="uid" value="123">
 						<h3 class="welcome">后台管理平台</h3>
 						<div id="itemBox" class="item-box">
 							<div class="item">
 								<i class="icon-login-user"></i>
-								<input type="text" name="username" placeholder="请填写用户名" autocomplete="off" />
+								<input type="text" name="username" value="name" placeholder="请填写用户名" autocomplete="off" />
 							</div>
 							<span class="placeholder_copy placeholder_un">请填写用户名</span>
 							<div class="item pwd">
 								<i class="icon-login-pwd"></i>
-								<input type="password" name="password" placeholder="请输入密码" autocomplete="off" />
+								<input type="password" name="password" value="pass" placeholder="请输入密码" autocomplete="off" />
 							</div>
 							<span class="placeholder_copy placeholder_pwd">请输入密码</span>
 							<div class="item verifycode">
@@ -37,10 +38,11 @@
 							</div>
 						</div>
 						<div class="login-btn-panel">
-							<button class="login-btn" type="submit">
+                            <input type="submit" value="登录" class="login-btn">
+							<!--button class="login-btn" type="submit">
 								<span class="in"><i class="icon-loading"></i>登 录 中 ...</span>
 								<span class="on">登录</span>
-							</button>
+							</button-->
 							<div class="check-tips"></div>
 						</div>
 					</form>
